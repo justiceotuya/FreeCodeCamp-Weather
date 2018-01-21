@@ -6,43 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Weather App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/weather-icons.min.css" />
 </head>
 
-<body>
-    <h1>
-        <span id="js-greeting">Welcome</span>, How is
-        <span id="js-city">your city</span>?
-        <br> Today is
-        <span id="js-date">nice</span> and your time is
-        <span id="js-time">correct</span>
-        <br>
-        <br>Here is your Weather Status at this time
-    </h1>
+<main class="container">
+    <div class="app">
+        <div class="header">
+            <img src="img/24-Cold-Weather-Hacks-to-Keep-You-Warm-All-Winter.jpg" alt="">
+            <span id="js-city">
+                <i class="fa fa-map-marker"></i>
+            </span>
+            <span id="js-date"></span>
+
+            <span id="js-greeting"></span>
+            <br>
+            <br>
+            <span id="js-time"></span>
+            <br>
+            <span id="js-description">
+            </span>
+            </h1>
+        </div>
+
+        <div id="second">
+            <img id="js-icon">
+
+            </span>
+
+
+            <span class="weather">
+
+                <span id="js-temp">
+                    <sup>
+                        <span class="js-degree">°C</span>
+                        <!-- <span class=js-degree>°F</span> -->
+                    </sup>
+                </span>
+
+            </span>
 
 
 
-    <span></span>
-    <span id="js-description"></span>
-    <img alt="weather icon" id="js-icon" width="64" height="64">
-
-    </span>
-
-    <strong>
-        <span id="js-temp"></span>
-    </strong>
-
-    <sup>
-        <span class="js-degree">°C</span>
-        <!-- <span class=js-degree>°F</span> -->
-    </sup>
-    <button id="js-tempButton" type="button">convert to Fahrenheit</button>
+            <br>
+            <button id="js-tempButton" type="button">Fahrenheit</button>
+        </div>
+    </div>
+</main>
 
 
 
-
-    <script src="index.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
 </body>
 
 </html>
