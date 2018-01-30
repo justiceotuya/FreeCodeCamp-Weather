@@ -70,13 +70,11 @@ $(document).ready(function () {
             $("#js-tempButton").on("click", function () {
               if (Celcius) {
                 var fahrenheit = (response.main.temp * 1.8) + 32;
-                $("#js-temp").text(fahrenheit.toFixed(1));
-                $(".js-degree").text("°F");
+                $("#js-temp").html(fahrenheit.toFixed(1) + "°F");
                 $(this).text("convert to Celcius");
                 Celcius = false;
               } else if (!Celcius) {
-                $("#js-temp").text(response.main.temp);
-                $(".js-degree").text("°C");
+                $("#js-temp").html(response.main.temp + " °C");
                 $(this).text("Convert to Fahrenheit");
                 Celcius = true;
               }
